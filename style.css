@@ -1,4 +1,26 @@
-.isi{
+/* CSS Bagian Navbar */
+
+/* CSS Bagian Navbar dan Kategori */
+
+/* CSS Bagian News dan Ads */
+
+.container-nws{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    position: relative;
+    justify-content: center;
+    margin-left: 30px;
+
+}
+.container-nws .news{
+    width: 600px;
+    height: 300px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    background-color: black;
+    border-radius: 15px;
     
 }
 
@@ -80,3 +102,87 @@ b{
     transform: scale(1.03);
     transition: all 0.5s ease;
 }
+.container-nws .news img{
+    width: 600px;
+    height: 300px;
+    opacity: 60%;
+    border-radius: 15px;
+}
+
+.container-nws .news a:hover{
+    opacity: 85%;
+}
+.container-nws .news .judul{
+    position: absolute;
+    font-size: 26px;
+    bottom: 20px;
+    top: 189px;
+    font-style: bold;
+    padding-left: 15px;
+    
+}
+
+.container-nws .news .judul a{
+    color: white;
+    text-decoration: none;
+    
+}
+.container-nws .news .judul a:hover{
+    color: orange;
+    text-decoration: none;
+    
+}
+.container-nws .ads{
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.container-nws .ads img{
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+}
+.container-nws .ads a:hover{
+    opacity: 85%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-nws{
+        flex-wrap: wrap-reverse;
+        justify-content: baseline;
+        margin-left: 0px;
+    }
+    .container-nws .news{
+        width: 400px;
+        height: 200px;
+        margin-right: 0px;
+        
+    }
+    .container-nws .news img{
+        width: 400px;
+        height: 200px;
+    }
+    .container-nws .news .judul{
+        font-size: 18px;
+        top: 280px;
+    }
+    .container-nws .ads{
+        margin-left: 0;
+        margin-bottom: 5px;
+        margin-right: 0px;
+    }
+    .container-nws .ads img{
+        width: 400px;
+        height: 150px;
+    }
+ 
+}
+
+/* CSS Bagian Berita terpopuler */
+
+/* CSS Bagian Berita Terbaru */
+
+/* CSS Bagian Footer */
+
+
+
+
