@@ -8,3 +8,7 @@
 - Adam
 - Ulfi Mustatiq Abidatul I.
 - Inda Khoirun Nisak
+
+## Nav Kategori
+![image 1](Screenshot/ss nav kategori 1.JPG)
+![image 2](Screenshot/ss nav kategori 2.JPG)
