@@ -367,6 +367,8 @@ b{
     transform: scale(1.03);
   }
   
+/* CSS Bagian Footer */
+
   .footer {
     color: gray;
     display: flex;
@@ -419,7 +421,7 @@ b{
   }
   
 
-/* CSS Bagian Footer */
+
 
 
 
