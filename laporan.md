@@ -10,5 +10,5 @@
 - Inda Khoirun Nisak
 
 ## Nav Kategori
-![image 1](Screenshot/ssNavKategori1.jpg)
-![image 2](Screenshot/ssNavKategori2.jpg)
+![image 1](Screenshot/ssNavKategori1.JPG)
+![image 2](Screenshot/ssNavKategori2.JPG)
