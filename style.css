@@ -1,3 +1,31 @@
 .isi{
     
 }
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.flex-container > a {
+  background-color: #C4C4C4;
+  text-decoration: none;
+  border-radius: 20px;
+  color: black;
+  width: 150px;
+  margin: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+}
+.flex-container :hover {
+  background-color: #e0e0e0;
+  color: darkred;
+  transform: scale(1.05);
+  
+}
+@media only screen and (max-width: 600px) {
+ .flex-container {
+ background-color: #C4C4C4 ;
+}
+}
