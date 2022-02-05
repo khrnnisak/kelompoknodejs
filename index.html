@@ -12,11 +12,11 @@
 <body>
 
     <!--Bagian Navbar-->
-        <div class="navbar" >
+    <div class="navbar">
         <div class="konten" id="none">
-            <table >
+            <table>
                 <tr>
-                    <td><img src="logo.png" alt="" class="logo"></td>
+                    <td><img src="gambar/logo.png" alt="" class="logo"></td>
                     <td>
                         <h3 class="menu">menu</h3>
                     </td>
@@ -24,140 +24,139 @@
             </table>
         </div>
         <div class="konten">
-                <table class="tabel">
-                    <tr>
-                        <td> <input type="search" class="input" placeholder="Cari Berita"></td>
-                        <td><img src="search.png" alt="" class="search-icon"></td>
-                    </tr>
-                </table>
+            <table class="tabel">
+                <tr>
+                    <td> <input type="search" class="input" placeholder="Cari Berita"></td>
+                    <td><img src="search.png" alt="" class="search-icon"></td>
+                </tr>
+            </table>
         </div>
         <div class="konten" id="tanggalwaktu">
             <script>
                 var tw = new Date();
-                if (tw.getTimezoneOffset() == 0) (a = tw.getTime() + (7 * 60 * 60 * 1000))
-                else (a = tw.getTime());
+                if (tw.getTimezoneOffset() == 0)(a = tw.getTime() + (7 * 60 * 60 * 1000))
+                else(a = tw.getTime());
                 tw.setTime(a);
                 var tahun = tw.getFullYear();
                 var hari = tw.getDay();
                 var bulan = tw.getMonth();
                 var tanggal = tw.getDate();
                 var hariarray = new Array("Minggu,", "Senin,", "Selasa,", "Rabu,", "Kamis,", "Jum'at,", "Sabtu,");
-                var bulanarray = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "Nopember", "Desember");
-                document.getElementById("tanggalwaktu").innerHTML = hariarray[hari] + " " + tanggal + " " + bulanarray[bulan] + " " + tahun;
-            </script> </div>
+                var bulanarray = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
+                    "September", "Oktober", "Nopember", "Desember");
+                document.getElementById("tanggalwaktu").innerHTML = hariarray[hari] + " " + tanggal + " " + bulanarray[
+                    bulan] + " " + tahun;
+            </script>
+        </div>
     </div>
+
+
     <!--Bagian Navbar Kategori-->
     <div class="flex-container">
-      <a href="#News"target="_self">News</a>
-      <a href="#Popular"target="_self">Popular</a>
-      <a href="https://www.youtube.com/watch?v=TEfeHfDi8ZQ&ab_channel=JCEMEGA"target="_blank">Game</a>  
-      <a href="#Sport"target="_self">Sport</a>
-      <a href="#Otomotif"target="_self">Otomotif</a>
-      <a href="#Entertainment"target="_self">Entertainment</a>  
-      <a href="#Health"target="_self">Health</a>
-      <a href="#Education"target="_self">Education</a>  
+        <a href="#News" target="_self">News</a>
+        <a href="#Popular" target="_self">Popular</a>
+        <a href="https://www.youtube.com/watch?v=TEfeHfDi8ZQ&ab_channel=JCEMEGA" target="_blank">Game</a>
+        <a href="#Sport" target="_self">Sport</a>
+        <a href="#Otomotif" target="_self">Otomotif</a>
+        <a href="#Entertainment" target="_self">Entertainment</a>
+        <a href="#Health" target="_self">Health</a>
+        <a href="#Education" target="_self">Education</a>
     </div>
 
     <!--News dan ads-->
     <div class="container-nws">
         <div class="news">
-            <a href="#"><img src="gambar/new.png" alt=""></a> 
-            <p class="judul"><a href="#">Polda Maluku Tambah Satu Kompi Brimob Redam <br> Bentrok di Pulau Haruku</a> </p>
+            <a href="#"><img src="gambar/new.png" alt=""></a>
+            <p class="judul"><a href="#">Polda Maluku Tambah Satu Kompi Brimob Redam <br> Bentrok di Pulau Haruku</a>
+            </p>
         </div>
         <div class="ads">
-            <a href="https://www.sehataqua.co.id/tentang-aqua/?utm_source=DISPLAY_CONTEXTUAL&utm_medium=IMAGE&utm_campaign=WMIDN_DNN_AQUA_AON&utm_term=CPM&utm_content=IMAGE&dclid=CjgKEAiA3L6PBhD3gsvYyJilkRcSJADr6Xo3PreBfqOlybGADiZBa5msxEXlwh83Yz4DlAidMQjhn_D_BwE"><img src="gambar/ads.png" alt=""></a>
+            <a
+                href="https://www.sehataqua.co.id/tentang-aqua/?utm_source=DISPLAY_CONTEXTUAL&utm_medium=IMAGE&utm_campaign=WMIDN_DNN_AQUA_AON&utm_term=CPM&utm_content=IMAGE&dclid=CjgKEAiA3L6PBhD3gsvYyJilkRcSJADr6Xo3PreBfqOlybGADiZBa5msxEXlwh83Yz4DlAidMQjhn_D_BwE"><img
+                    src="gambar/ads.png" alt=""></a>
         </div>
     </div>
 
     <!--Berita terpopuler-->
     <b>Berita Terpopuler</b>
-    <section class="container">
-        <div class="card">
+    <section class="container1">
+        <div class="card1">
             <div class="card-image car-1"></div>
             <h3>Vaksinasi Booster Gratis, Masyarakat Diingatkan Tetap Displin Prokes</h3>
         </div>
-        <div class="card">
+        <div class="card1">
             <div class="card-image car-2"></div>
             <h3>Kecelakaan Beruntun Balikpapan Libatkan Truk Tronton</h3>
         </div>
-        <div class="card">
+        <div class="card1">
             <div class="card-image car-3"></div>
             <h3>Gempa Hari Sabtu 22 Januari 2022 Getarkan Bandung dan Melonguane Sulut</h3>
-        
+
         </div>
-        <div class="card">
+        <div class="card1">
             <div class="card-image car-4"></div>
             <h3>Gempa Magnitudo 3,9 Goyang Kabupaten Bandung</h3>
         </div>
-        <div class="card">
+        <div class="card1">
             <div class="card-image car-5"></div>
             <h3>3.783 Jiwa Terdampak dan 964 Rumah Terendam Banjir di Cirebon</h3>
-        
+
         </div>
     </section>
 
     <!--Berita terbaru-->
-        <main class="container">
-          <h1 class="section-title">Berita Terbaru</h1>
+    <main class="container">
+        <h1 class="section-title">Berita Terbaru</h1>
         <section class="news-wrapper">
-          <div class="card">
-            <img
-              class="card-image"
-              src="img/news.jpg"
-              alt="Omicron Membuat Perayaan Tahun Baru 2022 di Banyak Negara Lebih Sunyi"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                <a href="#"></a>
-                Omicron Membuat Perayaan Tahun Baru 2022 di Banyak Negara Lebih Sunyi
-                </a>
-              </h3>
-              <div class="card-description">
-                <a href="#" class="card-category">Covid</a>
-                <p>7 jam lalu</p>
-              </div>
+            <div class="card">
+                <img class="card-image" src="gambar/news.jpg"
+                    alt="Omicron Membuat Perayaan Tahun Baru 2022 di Banyak Negara Lebih Sunyi" />
+                <div class="card-content">
+                    <h3 class="card-title">
+                        <a href="#"></a>
+                        Omicron Membuat Perayaan Tahun Baru 2022 di Banyak Negara Lebih Sunyi
+                        </a>
+                    </h3>
+                    <div class="card-description">
+                        <a href="#" class="card-category">Covid</a>
+                        <p>7 jam lalu</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card">
-            <img
-              class="card-image"
-              src="img/news2.jpg"
-              alt="4 Desa di Sumatera Utara Diterjang Banjir Bandang Saat Malam Tahun Baru 2022"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                <a href="#">
-                  4 Desa di Sumatera Utara Diterjang Banjir Bandang Saat Malam Tahun Baru 2022
-                </a>
-              </h3>
-              <div class="card-description">
-                <a href="#" class="card-category">Bencana</a>
-                <p>7 jam lalu</p>
-              </div>
+            <div class="card">
+                <img class="card-image" src="gambar/news2.jpeg"
+                    alt="4 Desa di Sumatera Utara Diterjang Banjir Bandang Saat Malam Tahun Baru 2022" />
+                <div class="card-content">
+                    <h3 class="card-title">
+                        <a href="#">
+                            4 Desa di Sumatera Utara Diterjang Banjir Bandang Saat Malam Tahun Baru 2022
+                        </a>
+                    </h3>
+                    <div class="card-description">
+                        <a href="#" class="card-category">Bencana</a>
+                        <p>7 jam lalu</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card">
-            <img
-              class="card-image"
-              src="img/news3.jpg"
-              alt="Sebaran 8.077 Corona 27 Januari 2022, Tertinggi DKI Jakarta Sumbang 4.149 Kasus"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                <a href="#">
-                  Sebaran 8.077 Corona 27 Januari 2022, Tertinggi DKI Jakarta Sumbang 4.149 Kasus
-                </a>
-              </h3>
-              <div class="card-description">
-                <a href="#" class="card-category">Covid</a>
-                <p>7 jam lalu</p>
-              </div>
+            <div class="card">
+                <img class="card-image" src="gambar/news3.jpg"
+                    alt="Sebaran 8.077 Corona 27 Januari 2022, Tertinggi DKI Jakarta Sumbang 4.149 Kasus" />
+                <div class="card-content">
+                    <h3 class="card-title">
+                        <a href="#">
+                            Sebaran 8.077 Corona 27 Januari 2022, Tertinggi DKI Jakarta Sumbang 4.149 Kasus
+                        </a>
+                    </h3>
+                    <div class="card-description">
+                        <a href="#" class="card-category">Covid</a>
+                        <p>7 jam lalu</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          
+
         </section>
-      </main>
-      
+    </main>
+
     <!--Footer-->
     <footer class="footer">
         <section class="info">
@@ -167,8 +166,8 @@
             <a href="#">Contact Us</a>
             <a href="#">Advertise</a>
         </section>
-       <p>Copyright 2022 Team . All rights reserved. </p>
-       
+        <p>Copyright 2022 Team . All rights reserved. </p>
+
     </footer>
 </body>
 

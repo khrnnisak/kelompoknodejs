@@ -1,78 +1,78 @@
 /* CSS Bagian Navbar */
-* {margin: 0;
-
-box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-color: #C4C4C4;
-  
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #C4C4C4;
+  margin-bottom: 2vw;
 }
 
-.konten{
-    padding: 5px;
-    margin: 5px;
-    flex :1;
+.konten {
+  padding: 5px;
+  margin: 5px;
+  flex: 1;
 }
 
-.logo{
-margin-left: 2vw;
+.logo {
+  margin-left: 2vw;
 }
 
-.menu{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25pt;
-    margin-left: 1vw;
+.menu {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25pt;
+  margin-left: 1vw;
 }
 
-.tabel{
-    width: 100%;
-    border-radius: 10px;
-    background-color: #f2f2f2 ;
+.tabel {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f2f2f2;
 }
 
-.input{
-width: 100%;
-margin-top: -3px;
-margin-bottom: -3px;
-margin-left: -3px;
-margin-right: 100px;
-outline: none;
-padding: 8px;
-font-size: 13pt;
-border-radius: 10px 0 0 10px;
-border: none;
+.input {
+  width: 100%;
+  padding: 8px;
+  font-size: 13pt;
+  border-radius: 10px;
+  border: none;
 }
 
-.search-icon{
-    max-width: 20px;
-    max-height: 20px;
-    transform: rotate(270deg);
+.search-icon {
+  max-width: 20px;
+  max-height: 20px;
+  transform: rotate(270deg);
 }
 
-#tanggalwaktu{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 15pt;
-    text-align: end;
-    padding-right: 2vw ;
+#tanggalwaktu {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15pt;
+  text-align: end;
+  padding-right: 2vw;
 }
+
 @media only screen and (max-width: 600px) {
-    .menu {
-        display: none;
-    }
+  .navbar {
+    margin-bottom: 0;
+  }
 
-    #none {
-        flex: 0;
-    }
+  .menu {
+    display: none;
+  }
 
-    #tanggalwaktu {
-        font-size: 12pt;
-    }
+  #none {
+    flex: 0;
+  }
+
+  #tanggalwaktu {
+    font-size: 12pt;
+  }
 }
 
 /* CSS Bagian Navbar dan Kategori */
@@ -81,8 +81,10 @@ border: none;
   justify-content: center;
   flex-wrap: wrap;
   cursor: pointer;
+  margin-bottom: 3vw;
 }
-.flex-container > a {
+
+.flex-container>a {
   background-color: #C4C4C4;
   text-decoration: none;
   border-radius: 20px;
@@ -93,335 +95,357 @@ border: none;
   line-height: 35px;
   font-size: 20px;
 }
+
 .flex-container :hover {
   background-color: #e0e0e0;
   color: darkred;
   transform: scale(1.05);
-  
+
 }
+
 @media only screen and (max-width: 600px) {
- .flex-container {
- background-color: #C4C4C4 ;
-}
+  .flex-container {
+    background-color: #C4C4C4;
+  }
 }
 
 
 /* CSS Bagian News dan Ads */
 
-.container-nws{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 15px;
-    position: relative;
-    justify-content: center;
-    margin-left: 30px;
+.container-nws {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  position: relative;
+  justify-content: center;
+  margin-left: 30px;
+  margin-bottom: 3vw;
 
 }
-.container-nws .news{
-    width: 600px;
-    height: 300px;
-    margin-bottom: 30px;
-    margin-right: 40px;
-    background-color: black;
-    border-radius: 15px;
-    
+
+.container-nws .news {
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  background-color: black;
+  border-radius: 15px;
+
 }
 
 
-.container-nws .news img{
-    width: 600px;
-    height: 300px;
-    opacity: 60%;
-    border-radius: 15px;
+.container-nws .news img {
+  width: 600px;
+  height: 300px;
+  opacity: 60%;
+  border-radius: 15px;
 }
 
-.container-nws .news a:hover{
-    opacity: 85%;
-}
-.container-nws .news .judul{
-    position: absolute;
-    font-size: 26px;
-    bottom: 20px;
-    top: 189px;
-    font-style: bold;
-    padding-left: 15px;
-    
+.container-nws .news a:hover {
+  opacity: 85%;
 }
 
-.container-nws .news .judul a{
-    color: white;
-    text-decoration: none;
-    
+.container-nws .news .judul {
+  position: absolute;
+  font-size: 26px;
+  bottom: 20px;
+  top: 189px;
+  font-style: bold;
+  padding-left: 15px;
+
 }
-.container-nws .news .judul a:hover{
-    color: orange;
-    text-decoration: none;
-    
+
+.container-nws .news .judul a {
+  color: white;
+  text-decoration: none;
+
 }
-.container-nws .ads{
-    margin-left: 20px;
-    margin-right: 40px;
+
+.container-nws .news .judul a:hover {
+  color: orange;
+  text-decoration: none;
+
 }
-.container-nws .ads img{
-    width: 450px;
-    height: 250px;
-    border-radius: 15px;
+
+.container-nws .ads {
+  margin-left: 20px;
+  margin-right: 40px;
 }
-.container-nws .ads a:hover{
-    opacity: 85%;
+
+.container-nws .ads img {
+  width: 450px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.container-nws .ads a:hover {
+  opacity: 85%;
 }
 
 @media only screen and (max-width: 600px) {
-    .container-nws{
-        flex-wrap: wrap-reverse;
-        justify-content: baseline;
-        margin-left: 0px;
-    }
-    .container-nws .news{
-        width: 400px;
-        height: 200px;
-        margin-right: 0px;
-        
-    }
-    .container-nws .news img{
-        width: 400px;
-        height: 200px;
-    }
-    .container-nws .news .judul{
-        font-size: 18px;
-        top: 280px;
-    }
-    .container-nws .ads{
-        margin-left: 0;
-        margin-bottom: 5px;
-        margin-right: 0px;
-    }
-    .container-nws .ads img{
-        width: 400px;
-        height: 150px;
-    }
- 
+  .container-nws {
+    flex-wrap: wrap-reverse;
+    justify-content: baseline;
+    margin-left: 0px;
+  }
+
+  .container-nws .news {
+    width: 400px;
+    height: 200px;
+    margin-right: 0px;
+
+  }
+
+  .container-nws .news img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .container-nws .news .judul {
+    font-size: 18px;
+    top: 280px;
+  }
+
+  .container-nws .ads {
+    margin-left: 0;
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+
+  .container-nws .ads img {
+    width: 400px;
+    height: 150px;
+  }
+
 }
 
 /* CSS Bagian Berita terpopuler */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
 h3 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-b{
-    color:black;
-    font-size: 35px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 60px;
+b {
+  color: black;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 60px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.container1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1vw;
 }
 
-.card {
-    background-color: white;
-    width: 270px;
-    margin: 10px;
-    border-radius: 15px;
-    padding-bottom: 5px;
+.card1 {
+  background-color: white;
+  width: 270px;
+  margin: 10px;
+  border-radius: 15px;
+  padding-bottom: 5px;
 }
 
 .card-image {
-    height: 170px;
-    margin-bottom: 15px;
-    background-size: cover;
-    border-radius: 15px;
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px;
 }
 
 .car-1 {
-    background-image: url(gambar/news.jpg);
+  background-image: url(gambar/news.jpg);
 }
 
 .car-2 {
-    background-image: url(gambar/news2.jpeg);
+  background-image: url(gambar/news2.jpeg);
 }
 
 .car-3 {
-    background-image: url(gambar/news3.jpg);
+  background-image: url(gambar/news3.jpg);
 }
 
 .car-4 {
-    background-image: url(gambar/news4.jpg);
+  background-image: url(gambar/news4.jpg);
 }
 
 .car-5 {
-    background-image: url(gambar/news5.jpeg);
+  background-image: url(gambar/news5.jpeg);
 }
 
 .card h2 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .card p {
-    padding: 10px;
+  padding: 10px;
 }
 
 
 .card:hover {
-    background-color: rgb(41, 41, 41);
-    color: white;
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 0.5s ease;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.5s ease;
 }
+
 /* CSS Bagian Berita Terbaru */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  body {
-    background-color: #f1f1f1;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 16px;
-  }
-  .section-title {
-    margin: 16px 0;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  .news-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: flex-start;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px -2px rgb(0 0 0 / 0.1);
-    transition: cubic-bezier(0.5, 0.5, 0.5, 0.5);
-    transition-duration: 200ms;
-  }
-  
-  .card-image {
-    height: 180px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .card-content {
-    padding: 8px;
-    display: flex;
-    flex-grow: 1;
-    gap: 8px;
-    flex-direction: column;
-  }
-  
-  .card-title {
-    font-weight: 700;
-    color: black;
-  }
-  
-  .card-description {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    color: grey;
-  }
-  .card-category {
-    color: grey;
-  }
-  .card-category:hover {
-    color: lightskyblue;
-  }
-  
-  .card:hover {
-    cursor: pointer;
-    box-shadow: 0 8px 16px -4px rgb(0 0 0 / 0.1);
-    transform: scale(1.03);
-  }
-  
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.section-title {
+  margin: 16px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.news-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px -2px rgb(0 0 0 / 0.1);
+  transition: cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  transition-duration: 200ms;
+}
+
+.card-image {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-content {
+  padding: 8px;
+  display: flex;
+  flex-grow: 1;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.card-title {
+  font-weight: 700;
+  color: black;
+}
+
+.card-description {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+
+.card-category {
+  color: grey;
+}
+
+.card-category:hover {
+  color: lightskyblue;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px -4px rgb(0 0 0 / 0.1);
+  transform: scale(1.03);
+}
+
 /* CSS Bagian Footer */
 
-  .footer {
-    color: gray;
-    display: flex;
-    font-size: small;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    margin-top: 32px;
-    gap: 8px;
-  }
-  .footer a {
-    color: gray;
-    font-weight: 700;
-    margin: 8px;
-  }
-  .footer a:hover {
-    color: lightskyblue;
-  }
-  .footer.info {
-    display: flex;
-  }
-  /* Small Size */
-  @media screen and (min-width: 576px) {
-    .container {
-      max-width: 576px;
-    }
-    .card {
-      width: 100%;
-    }
-  }
-  
-  /* Medium Size */
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-    .card {
-      width: 48%;
-    }
-  }
-  
-  /* Medium Size */
-  @media screen and (min-width: 1024px) {
-    .container {
-      max-width: 1024px;
-    }
-    .card {
-      width: 32%;
-    }
-  }
-  
+.footer {
+  color: gray;
+  display: flex;
+  font-size: small;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin-top: 32px;
+  gap: 8px;
+}
 
+.footer a {
+  color: gray;
+  font-weight: 700;
+  margin: 8px;
+}
 
+.footer a:hover {
+  color: lightskyblue;
+}
 
+.footer.info {
+  display: flex;
+}
 
+/* Small Size */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
 
+  .card {
+    width: 100%;
+  }
+}
 
+/* Medium Size */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .card {
+    width: 48%;
+  }
+}
+
+/* Medium Size */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .card {
+    width: 32%;
+  }
+}
