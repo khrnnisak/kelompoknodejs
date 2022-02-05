@@ -1,6 +1,7 @@
 /* CSS Bagian Navbar */
 * {margin: 0;
 
+
   box-sizing: border-box;
   }
   
@@ -32,6 +33,171 @@
       margin-top: -3px;
       margin-left: -6px;
       height: 40px;
+=======
+box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #C4C4C4;
+  
+}
+
+.konten{
+    padding: 5px;
+    margin: 5px;
+    flex :1;
+}
+
+.logo{
+margin-left: 2vw;
+}
+
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    margin-left: 1vw;
+}
+
+.tabel{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f2f2f2 ;
+}
+
+.input{
+width: 100%;
+margin-top: -3px;
+margin-bottom: -3px;
+margin-left: -3px;
+margin-right: 100px;
+outline: none;
+padding: 8px;
+font-size: 13pt;
+border-radius: 10px 0 0 10px;
+border: none;
+}
+
+.search-icon{
+    max-width: 20px;
+    max-height: 20px;
+    transform: rotate(270deg);
+}
+
+#tanggalwaktu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    text-align: end;
+    padding-right: 2vw ;
+}
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    #none {
+        flex: 0;
+    }
+
+    #tanggalwaktu {
+        font-size: 12pt;
+    }
+}
+
+/* CSS Bagian Navbar dan Kategori */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.flex-container > a {
+  background-color: #C4C4C4;
+  text-decoration: none;
+  border-radius: 20px;
+  color: black;
+  width: 150px;
+  margin: 8px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+}
+.flex-container :hover {
+  background-color: #e0e0e0;
+  color: darkred;
+  transform: scale(1.05);
+  
+}
+@media only screen and (max-width: 600px) {
+ .flex-container {
+ background-color: #C4C4C4 ;
+}
+}
+
+
+/* CSS Bagian News dan Ads */
+
+.container-nws{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    position: relative;
+    justify-content: center;
+    margin-left: 30px;
+
+}
+.container-nws .news{
+    width: 600px;
+    height: 300px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    background-color: black;
+    border-radius: 15px;
+    
+}
+
+
+.container-nws .news img{
+    width: 600px;
+    height: 300px;
+    opacity: 60%;
+    border-radius: 15px;
+}
+
+.container-nws .news a:hover{
+    opacity: 85%;
+}
+.container-nws .news .judul{
+    position: absolute;
+    font-size: 26px;
+    bottom: 20px;
+    top: 189px;
+    font-style: bold;
+    padding-left: 15px;
+    
+}
+
+.container-nws .news .judul a{
+    color: white;
+    text-decoration: none;
+    
+}
+.container-nws .news .judul a:hover{
+    color: orange;
+    text-decoration: none;
+    
+}
+.container-nws .ads{
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.container-nws .ads img{
+
     width: 450px;
     border: none;
     outline: none;
