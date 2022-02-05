@@ -6,6 +6,9 @@
   margin: 0;
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+body {
+  background-color: white;
+}
 
 .navbar{
     display: flex;
@@ -38,16 +41,16 @@ margin-left: 2vw;
 }
 
 .input{
-width: 100%;
-margin-top: -3px;
-margin-bottom: -3px;
-margin-left: -3px;
-margin-right: 100px;
-outline: none;
-padding: 8px;
-font-size: 13pt;
-border-radius: 10px 0 0 10px;
-border: none;
+  width: 100%;
+  margin-top: -3px;
+  margin-bottom: -3px;
+  margin-left: -3px;
+  margin-right: 100px;
+  outline: none;
+  padding: 8px;
+  font-size: 13pt;
+  border-radius: 10px 0 0 10px;
+  border: none;
 }
 
 .search-icon{
@@ -95,7 +98,7 @@ border: none;
   margin: 8px;
   text-align: center;
   line-height: 35px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .flex-container :hover {
@@ -108,6 +111,10 @@ border: none;
 @media only screen and (max-width: 600px) {
   .flex-container {
     background-color: #C4C4C4;
+    flex-wrap: nowrap;
+  }
+  .flex-container>a{
+    font-size: 17px;
   }
 }
 
@@ -225,9 +232,7 @@ border: none;
 
 /* CSS Bagian Berita terpopuler */
 
-body {
-  background-color: white;
-}
+
 
 h3 {
   margin-left: 10px;
@@ -255,7 +260,7 @@ b {
   padding-bottom: 5px;
 }
 
-.card-image {
+.card1-image {
   height: 170px;
   margin-bottom: 15px;
   background-size: cover;
@@ -282,16 +287,16 @@ b {
   background-image: url(gambar/news5.jpeg);
 }
 
-.card h2 {
+.card1 h2 {
   padding: 10px;
 }
 
-.card p {
+.card1 p {
   padding: 10px;
 }
 
 
-.card:hover {
+.card1:hover {
   background-color: rgb(41, 41, 41);
   color: white;
   cursor: pointer;
@@ -315,13 +320,16 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  margin-left: 55px;
+  margin-top: 0;
   padding: 16px;
 }
 
 .section-title {
   margin: 16px 0;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  font-style: bold;
 }
 
 .news-wrapper {
