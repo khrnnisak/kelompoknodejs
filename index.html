@@ -63,56 +63,6 @@
         <a href="#Health" target="_self">Health</a>
         <a href="#Education" target="_self">Education</a>
 
-  <!--Bagian Navbar-->
-  <div class="navbar">
-    <div class="konten" id="none">
-      <table>
-        <tr>
-          <td><img src="logo.png" alt="" class="logo"></td>
-          <td>
-            <h3 class="menu">menu</h3>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div class="konten">
-      <table class="tabel">
-        <tr>
-          <td> <input type="search" class="input" placeholder="Cari Berita"></td>
-          <td><img src="search.png" alt="" class="search-icon"></td>
-        </tr>
-      </table>
-
-    </div>
-    <div class="konten" id="tanggalwaktu">
-      <script>
-        var tw = new Date();
-        if (tw.getTimezoneOffset() == 0) (a = tw.getTime() + (7 * 60 * 60 * 1000))
-        else (a = tw.getTime());
-        tw.setTime(a);
-        var tahun = tw.getFullYear();
-        var hari = tw.getDay();
-        var bulan = tw.getMonth();
-        var tanggal = tw.getDate();
-        var hariarray = new Array("Minggu,", "Senin,", "Selasa,", "Rabu,", "Kamis,", "Jum'at,", "Sabtu,");
-        var bulanarray = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "Nopember", "Desember");
-        document.getElementById("tanggalwaktu").innerHTML = hariarray[hari] + " " + tanggal + " " + bulanarray[bulan] + " " + tahun;
-      </script>
-    </div>
-  </div>
-  <!--Bagian Navbar Kategori-->
-  <div class="flex-container">
-    <a href="#News" target="_self">News</a>
-    <a href="#Popular" target="_self">Popular</a>
-    <a href="https://www.youtube.com/watch?v=TEfeHfDi8ZQ&ab_channel=JCEMEGA" target="_blank">Game</a>
-    <a href="#Sport" target="_self">Sport</a>
-    <a href="#Otomotif" target="_self">Otomotif</a>
-    <a href="#Entertainment" target="_self">Entertainment</a>
-    <a href="#Health" target="_self">Health</a>
-    <a href="#Education" target="_self">Education</a>
-  </div>
-
-
     <!--News dan ads-->
     <div class="container-nws">
         <div class="news">
