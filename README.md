@@ -12,7 +12,6 @@
 ### Hasil
 - Dekstop
     <img src="gambar/dekstop.png">
-    <img src="gambar/dekstop w.png">
 
 - Mobile
     <img src="gambar/mobile.png">
